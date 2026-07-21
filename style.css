@@ -50,24 +50,39 @@ header p{
 /* =========================
 Balance Card
 ========================= */
+/* ===========================
+Premium Dashboard
+=========================== */
 
 .balance-card{
 
     margin-top:25px;
 
-    background:linear-gradient(135deg,#4f46e5,#6d5dfc);
+    padding:25px;
+
+    border-radius:28px;
+
+    background:linear-gradient(135deg,#5b4bff,#7f4dff);
 
     color:white;
 
-    border-radius:25px;
-
-    padding:25px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    box-shadow:0 20px 40px rgba(91,75,255,.25);
 
 }
 
-.balance-card p{
+.balance-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.balance-title{
+
+    font-size:15px;
 
     opacity:.9;
 
@@ -75,39 +90,89 @@ Balance Card
 
 .balance-card h1{
 
+    font-size:42px;
+
     margin-top:10px;
 
-    font-size:40px;
+    font-weight:700;
+
+}
+
+.wallet-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
 
 }
 
 .income-expense{
 
+    margin-top:30px;
+
     display:flex;
 
-    justify-content:space-between;
-
-    margin-top:30px;
+    gap:15px;
 
 }
 
-.income-expense div{
+.income-box{
 
-    width:48%;
+    flex:1;
 
     background:rgba(255,255,255,.15);
 
-    border-radius:15px;
+    padding:18px;
 
-    padding:15px;
+    border-radius:18px;
 
     backdrop-filter:blur(10px);
 
 }
 
-.income-expense h3{
+.expense-box{
+
+    flex:1;
+
+    background:rgba(255,255,255,.15);
+
+    padding:18px;
+
+    border-radius:18px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.income-box p,
+
+.expense-box p{
+
+    font-size:14px;
+
+    opacity:.9;
+
+}
+
+.income-box h3,
+
+.expense-box h3{
 
     margin-top:8px;
+
+    font-size:24px;
 
 }
 
