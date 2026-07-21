@@ -175,7 +175,85 @@ Premium Dashboard
     font-size:24px;
 
 }
+/* ===========================
+Statistics Cards
+=========================== */
 
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin-top:22px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.stat-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#eef2ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.stat-card p{
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+.stat-card h2{
+
+    margin-top:5px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
 /* =========================
 Buttons
 ========================= */
