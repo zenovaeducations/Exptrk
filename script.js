@@ -656,7 +656,33 @@ document.addEventListener("keydown", function(e){
     }
 
 });
+function getWeekExpense(){
 
+    let total = 0;
+
+    const today = new Date();
+
+    const lastWeek = new Date();
+
+    lastWeek.setDate(today.getDate()-6);
+
+    transactions.forEach((item)=>{
+
+        if(item.type!=="Expense") return;
+
+        const d = new Date(item.date);
+
+        if(d>=lastWeek && d<=today){
+
+            total += Number(item.amount);
+
+        }
+
+    });
+
+    return total;
+
+}
 // ----------------------------
 // Welcome Message
 // ----------------------------
