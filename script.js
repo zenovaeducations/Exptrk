@@ -597,13 +597,21 @@ window.exportCSV = function() {
 // Refresh Dashboard
 // ----------------------------
 
-function refreshDashboard() {
+function refreshDashboard(){
 
     calculateTotals();
 
-    console.log("Today's Expense : ₹" + getTodayExpense());
+    document.getElementById("todayExpense").innerHTML =
+    "₹" + getTodayExpense().toLocaleString();
 
-    console.log("This Month : ₹" + getMonthExpense());
+    document.getElementById("weekExpense").innerHTML =
+    "₹" + getWeekExpense().toLocaleString();
+
+    document.getElementById("monthExpense").innerHTML =
+    "₹" + getMonthExpense().toLocaleString();
+
+    document.getElementById("transactionCount").innerHTML =
+    transactions.length;
 
 }
 
