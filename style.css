@@ -1,0 +1,424 @@
+/* =========================
+   Google Font
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    color:#222;
+}
+
+.app{
+    max-width:450px;
+    margin:auto;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* =========================
+Header
+========================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+}
+
+header h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+header p{
+    color:#777;
+}
+
+.profile{
+    font-size:45px;
+    color:#4f46e5;
+}
+
+/* =========================
+Balance Card
+========================= */
+
+.balance-card{
+
+    margin-top:25px;
+
+    background:linear-gradient(135deg,#4f46e5,#6d5dfc);
+
+    color:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.balance-card p{
+
+    opacity:.9;
+
+}
+
+.balance-card h1{
+
+    margin-top:10px;
+
+    font-size:40px;
+
+}
+
+.income-expense{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+.income-expense div{
+
+    width:48%;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:15px;
+
+    padding:15px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.income-expense h3{
+
+    margin-top:8px;
+
+}
+
+/* =========================
+Buttons
+========================= */
+
+.quick-actions{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:25px;
+
+}
+
+.quick-actions button{
+
+    width:48%;
+
+    border:none;
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.quick-actions button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+#addIncome{
+
+    color:#0f9d58;
+
+}
+
+#addExpense{
+
+    color:#ea4335;
+
+}
+
+/* =========================
+Transactions
+========================= */
+
+.transactions{
+
+    margin-top:35px;
+
+}
+
+.title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.transaction{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:16px;
+
+    margin-bottom:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    color:white;
+
+}
+
+.food{
+
+    background:#ff9800;
+
+}
+
+.bus{
+
+    background:#2196f3;
+
+}
+
+.salary{
+
+    background:#0f9d58;
+
+}
+
+.other{
+
+    background:#7b1fa2;
+
+}
+
+.amount{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.expense{
+
+    color:#e53935;
+
+}
+
+.income{
+
+    color:#0f9d58;
+
+}
+
+/* =========================
+Floating Button
+========================= */
+
+.fab{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#4f46e5;
+
+    color:white;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 35px rgba(79,70,229,.35);
+
+    transition:.3s;
+
+}
+
+.fab:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* =========================
+Popup
+========================= */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.popup-box{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+}
+
+.popup-box h2{
+
+    margin-bottom:20px;
+
+}
+
+.popup-box input,
+
+.popup-box select,
+
+.popup-box textarea{
+
+    width:100%;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.popup-box textarea{
+
+    resize:none;
+
+    height:100px;
+
+}
+
+.popup-box button{
+
+    width:100%;
+
+    border:none;
+
+    background:#4f46e5;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
